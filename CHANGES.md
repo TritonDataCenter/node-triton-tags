@@ -4,6 +4,10 @@
 
 (nothing yet)
 
+## 1.4.0
+
+- triton-cns#25: Better support for SRV records
+
 ## 1.3.0
 
 - TRITON-1242: Add `triton.placement.exclude_virtual_servers` boolean tag. This

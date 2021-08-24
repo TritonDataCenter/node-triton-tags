@@ -5,7 +5,7 @@
  */
 
 /*
- * Copyright 2018, Joyent, Inc.
+ * Copyright 2021, Joyent, Inc.
  */
 
 /*
@@ -220,6 +220,34 @@ var cases = [
         key: 'triton.cns.services',
         str: '5foobar',
         val: '5foobar'
+    },
+    // _service._protocol support
+    {
+        key: 'triton.cns.services',
+        str: '_ldap._tcp:389',
+        val: '_ldap._tcp:389'
+    },
+    {
+        key: 'triton.cns.services',
+        str: '_dns._udp:389',
+        val: '_dns._udp:389'
+    },
+    {
+        key: 'triton.cns.services',
+        str: '_foo._tcp:123:priority=20:weight=20',
+        val: '_foo._tcp:123:priority=20:weight=20'
+    },
+    {
+        key: 'triton.cns.services',
+        str: '_foo._bar:389',
+        /* JSSTYLED */
+        err: /Expected DNS name but "_" found/
+    },
+    {
+        key: 'triton.cns.services',
+        str: '_tcp:389',
+        /* JSSTYLED */
+        err: /Expected DNS name but "_" found/
     }
 
     // TODO: triton.cns.reverse_ptr
