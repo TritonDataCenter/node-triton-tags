@@ -4,6 +4,14 @@
 
 (nothing yet)
 
+## 1.5.0
+
+- TRITON-2497 Static IP support for sdc-docker (new tag type)
+
+## 1.4.1
+
+- Remove git:// URLs.
+
 ## 1.4.0
 
 - triton-cns#25: Better support for SRV records
