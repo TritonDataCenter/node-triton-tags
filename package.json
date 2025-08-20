@@ -1,8 +1,8 @@
 {
   "name": "triton-tags",
   "description": "Triton tags parsing and validation",
-  "version": "1.4.1",
-  "author": "Joyent (joyent.com)",
+  "version": "1.4.2",
+  "author": "Triton Data Center (tritondatacenter.com)",
   "dependencies": {
     "assert-plus": "^1.0.0"
   },
