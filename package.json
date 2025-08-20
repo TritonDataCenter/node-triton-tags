@@ -1,7 +1,7 @@
 {
   "name": "triton-tags",
   "description": "Triton tags parsing and validation",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "author": "Triton Data Center (tritondatacenter.com)",
   "dependencies": {
     "assert-plus": "^1.0.0"
